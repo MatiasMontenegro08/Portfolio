@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 6vh;
+    background-color: rgb(4, 80, 167);
+
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+h1{
+    float: left;
+}
