@@ -1,0 +1,23 @@
+.proyectos{
+    text-align: center;
+    padding: 20px;
+        h2{
+            color: $color-secundario;
+        }
+}
+.proyectos__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.card{
+    width: 250px;
+    text-align: justify;
+}

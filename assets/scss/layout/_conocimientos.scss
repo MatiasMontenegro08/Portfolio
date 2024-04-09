@@ -1,0 +1,37 @@
+.conocimientos{
+    width: 100%;
+    background-color: $color-secundario;
+    text-align: center;
+
+    h2{
+        margin-top: 20px;
+    }
+
+    .conocimientos__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .caja{
+        width: 250px;
+        height: 250px;
+    }
+
+    .caja1, .caja2, .caja3, .caja4, .caja5{
+        width: 100px;
+        height: 100px;
+        background-color: $color-primario;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        img{
+            width: 80px;
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+main {
+    width: 100%;
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fotoperfil {
+    width: 250px;
+    height: 280px;
+    background-color: $color-secundario;
+    border-radius: 10px;
+    border: 5px solid $color-secundario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    img {
+        width: 200px;
+    }
+}
+
+.perfil__info {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+
+    h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+
+}
+
+.containerredes {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+        font-size: 3rem;
+        color: $color-primario;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.boton{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        width: 100%;
+        text-decoration: none;
+        background-color: $color-primario;
+        padding: 10px 30px;
+        border-radius: 5px;
+        color: $color-secundario;
+    }
+}
