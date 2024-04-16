@@ -25,7 +25,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-right: 20px;
+}
+
+.img1 {
+  width: 150px;
+  height: 150px;
 }
 
 nav {
@@ -51,16 +57,6 @@ nav ul a {
 
 main {
   width: 100%;
-}
-
-.perfil {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 
 .fotoperfil {
@@ -103,19 +99,8 @@ main {
   letter-spacing: 0.5rem;
 }
 
-.boton {
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.boton a {
-  width: 100%;
-  text-decoration: none;
-  background-color: #082B43;
-  padding: 10px 30px;
-  border-radius: 5px;
-  color: #ffffff;
+.contenedor {
+  padding: 20px;
 }
 
 .conocimientos {
@@ -184,10 +169,89 @@ main {
   margin-bottom: 30px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .btn {
+  width: 80%;
+}
+
 footer {
   font-size: 60px;
-  color: #ffffff;
   text-align: center;
   padding: 10px;
   background-color: #021F3E;
+}
+footer a {
+  color: #ffffff;
+}
+
+.boton {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton a {
+  width: 100%;
+  text-decoration: none;
+  background-color: #082B43;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.subir {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #082B43;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  line-height: 43px;
+  border-radius: 50%;
+  border: 3px solid #021F3E;
+  transition: all 0.5s ease-in-out;
+  font-size: 40px;
+  text-align: center;
+}
+.subir:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 575px) {
+  .perfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .perfil__info {
+    order: 1;
+  }
+  .fotoperfil {
+    order: 2;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .perfil {
+    padding: 100px;
+  }
+  .perfil__info {
+    width: 40%;
+    margin-right: 100px;
+    order: 1;
+  }
+  .fotoperfil {
+    order: 2;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,10 @@
 footer{
     font-size: 60px;
-    color: $font-color-white;
     text-align: center;
     padding: 10px;
     background-color: $color-terciario;
+
+    a{
+        color: $font-color-white;
+    }
 }

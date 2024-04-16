@@ -6,5 +6,15 @@
         text-align: center;
         margin-bottom: 30px;
     }
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btn{
+        width: 80%;
+    }
 }

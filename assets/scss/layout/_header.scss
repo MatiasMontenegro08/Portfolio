@@ -5,7 +5,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-right: 20px;
+}
+
+.img1{
+    width: 150px;
+    height: 150px;
 }
 
 @import '../components/navbar';

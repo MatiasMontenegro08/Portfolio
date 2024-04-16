@@ -1,0 +1,35 @@
+.boton{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        width: 100%;
+        text-decoration: none;
+        background-color: $color-primario;
+        padding: 10px 30px;
+        border-radius: 5px;
+        color: $color-secundario;
+    }
+}
+
+.subir{
+    width: 50px;
+    height: 50px;
+    background-color: $font-color-white;
+    color: $color-primario;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    line-height: 43px;
+    border-radius: 50%;
+    border: 3px solid $color-terciario;
+    transition: all .5s ease-in-out;
+    font-size: 40px;
+    text-align: center;
+
+    &:hover{
+        transform: scale(1.5);
+    }
+}
