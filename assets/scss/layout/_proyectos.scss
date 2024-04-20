@@ -1,6 +1,7 @@
 .proyectos{
     text-align: center;
     padding: 20px;
+    background-image: linear-gradient(to bottom , $color-primario, $color-cuarto);
         h2{
             color: $color-secundario;
         }

@@ -6,7 +6,10 @@ html {
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-color: #082B43;
 }
 
+main{
+    width: 100%;
+    background-image: linear-gradient(to bottom , $color-primario, $color-cuarto);
+}

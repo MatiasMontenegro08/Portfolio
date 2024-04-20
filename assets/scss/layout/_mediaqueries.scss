@@ -1,6 +1,7 @@
 $small-screen: 575px;
 $medium: 768px;
 $large: 992px;
+$extra-large: 1200px;
 
 @media only screen and (max-width: $small-screen){
     .perfil {
@@ -11,6 +12,14 @@ $large: 992px;
         align-items: center;
         justify-content: center;
         padding: 20px;
+    }
+
+    .subir{
+        transition: none;
+
+        &:hover{
+            transform: none;
+        }
     }
 }
 
@@ -25,15 +34,32 @@ $large: 992px;
 
 @media only screen and (min-width:$large){
 
-    .perfil{
-        padding: 100px;
-    }
     .perfil__info{
         width: 40%;
-        margin-right: 100px;
         order: 1;
+        font-size: 1.2rem;
+        margin-right: 100px;
+        
+        h1{
+            font-size: 1.6rem;
+        }
     }
     .fotoperfil{
         order: 2;
+    }
+}
+
+@media only screen and (min-width:$extra-large){
+    main{
+        height: 75vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .perfil__info{
+        
+        h1{
+            font-size: 1.6rem;
+        }
     }
 }
