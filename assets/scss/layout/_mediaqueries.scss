@@ -1,9 +1,43 @@
+$extra-small-screen: 360px;
 $small-screen: 575px;
 $medium: 768px;
 $large: 992px;
 $extra-large: 1200px;
 
+@media only screen and (max-width: $extra-small-screen){
+    .banner{
+        img{
+            width: 90px;
+        }
+    }
+    nav{  
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            li{
+                margin: 0 10px;
+                list-style: circle;
+            }
+        }
+    }
+
+    .containerredes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        i {
+            font-size: 3rem;
+            color: $color-primario;
+            letter-spacing: 1rem;
+            margin: 5px;
+        }
+    }
+}
+
 @media only screen and (max-width: $small-screen){
+
     .perfil {
         width: 100%;
         height: 100%;
@@ -61,5 +95,11 @@ $extra-large: 1200px;
         h1{
             font-size: 1.6rem;
         }
+    }
+
+    .subir{
+        right: 40px;
+        bottom: 40px;
+        line-height: 43px;
     }
 }
