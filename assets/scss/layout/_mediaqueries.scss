@@ -1,9 +1,3 @@
-$extra-small-screen: 360px;
-$small-screen: 575px;
-$medium: 768px;
-$large: 992px;
-$extra-large: 1200px;
-
 @media only screen and (max-width: $extra-small-screen){
     .banner{
         img{
@@ -23,9 +17,7 @@ $extra-large: 1200px;
     }
 
     .containerredes {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        @include flexbox (flex, column, center, space-between);
     
         i {
             font-size: 3rem;
@@ -39,12 +31,8 @@ $extra-large: 1200px;
 @media only screen and (max-width: $small-screen){
 
     .perfil {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include sizes (100%, 100%);
+        @include flexbox (flex, column, center, center);
         padding: 20px;
     }
 
@@ -68,6 +56,14 @@ $extra-large: 1200px;
 
 @media only screen and (min-width:$large){
 
+    .fotoperfil {
+        @include sizes (400px, 400px);
+        order: 2;
+
+        img {
+            width: 100%;
+        }
+    }
     .perfil__info{
         width: 40%;
         order: 1;
@@ -77,9 +73,6 @@ $extra-large: 1200px;
         h1{
             font-size: 1.6rem;
         }
-    }
-    .fotoperfil{
-        order: 2;
     }
 }
 

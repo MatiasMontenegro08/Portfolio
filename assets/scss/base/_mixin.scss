@@ -1,0 +1,11 @@
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin flexbox($displey, $direction, $aling, $justify){
+    display: $displey;
+    flex-direction: $direction;
+    align-items: $aling;
+    justify-content: $justify;
+}

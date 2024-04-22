@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../font/montserrat/static/Montserrat-Black.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../font/montserrat/static/Montserrat-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*Paleta de colores*/
 /*Color tipografia*/
+/*Breackpoints*/
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +40,9 @@ main {
   background-color: #082B43;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding-right: 20px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .img1 {
@@ -41,8 +54,9 @@ nav {
   width: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: right;
+  flex-direction: row;
   align-items: center;
+  justify-content: right;
 }
 nav ul {
   padding: 10px;
@@ -63,17 +77,18 @@ main {
 
 .fotoperfil {
   width: 250px;
-  height: 280px;
+  height: 250px;
   background-color: #ffffff;
   border-radius: 10px;
   border: 5px solid #ffffff;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 }
 .fotoperfil img {
-  width: 200px;
+  width: 100%;
+  padding: 3px;
 }
 
 .perfil__info {
@@ -102,7 +117,7 @@ main {
 }
 
 .contenedor {
-  padding: 20px;
+  padding: 30px;
 }
 
 .conocimientos {
@@ -116,25 +131,26 @@ main {
 .conocimientos .conocimientos__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .conocimientos .caja {
   width: 250px;
   height: 250px;
 }
-.conocimientos .caja1, .conocimientos .caja2, .conocimientos .caja3, .conocimientos .caja4, .conocimientos .caja5 {
+.conocimientos .caja1, .conocimientos .caja2, .conocimientos .caja3, .conocimientos .caja4, .conocimientos .caja5, .conocimientos .caja6 {
   width: 100px;
   height: 100px;
-  background-color: #082B43;
-  margin: 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #082B43;
+  margin: 20px;
   border-radius: 10px;
 }
-.conocimientos .caja1 img, .conocimientos .caja2 img, .conocimientos .caja3 img, .conocimientos .caja4 img, .conocimientos .caja5 img {
+.conocimientos .caja1 img, .conocimientos .caja2 img, .conocimientos .caja3 img, .conocimientos .caja4 img, .conocimientos .caja5 img, .conocimientos .caja6 img {
   width: 80px;
 }
 
@@ -160,7 +176,7 @@ main {
 
 .card {
   width: 250px;
-  text-align: justify;
+  text-align: left;
 }
 
 .contacto {
@@ -175,8 +191,8 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 form .btn {
   width: 80%;
@@ -194,12 +210,15 @@ footer a {
 
 .boton {
   width: auto;
+  height: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .boton a {
   width: 100%;
+  height: auto;
   text-decoration: none;
   background-color: #082B43;
   padding: 10px 30px;
@@ -215,7 +234,7 @@ footer a {
   position: fixed;
   right: 15px;
   bottom: 15px;
-  line-height: 43px;
+  line-height: 47px;
   border-radius: 50%;
   border: 3px solid #021F3E;
   transition: all 0.5s ease-in-out;
@@ -242,7 +261,8 @@ footer a {
   .containerredes {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
   }
   .containerredes i {
     font-size: 3rem;
@@ -277,6 +297,14 @@ footer a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .fotoperfil {
+    width: 400px;
+    height: 400px;
+    order: 2;
+  }
+  .fotoperfil img {
+    width: 100%;
+  }
   .perfil__info {
     width: 40%;
     order: 1;
@@ -285,9 +313,6 @@ footer a {
   }
   .perfil__info h1 {
     font-size: 1.6rem;
-  }
-  .fotoperfil {
-    order: 2;
   }
 }
 @media only screen and (min-width: 1200px) {

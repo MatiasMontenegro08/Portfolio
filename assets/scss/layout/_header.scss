@@ -1,11 +1,8 @@
 .banner{
     width: 100%;
-    background-color: #082B43;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
+    background-color: $color-primario;
+    @include flexbox (flex, row, center, space-between);
+    padding: 10px;
 }
 
 .img1{

@@ -1,11 +1,9 @@
 .boton{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include sizes (auto, auto);
+    @include flexbox (flex, row, center, center);
 
     a {
-        width: 100%;
+        @include sizes (100%, auto);
         text-decoration: none;
         background-color: $color-primario;
         padding: 10px 30px;
@@ -15,14 +13,13 @@
 }
 
 .subir{
-    width: 50px;
-    height: 50px;
+    @include sizes (50px, 50px);
     background-color: $font-color-white;
     color: $color-primario;
     position: fixed;
     right: 15px;
     bottom: 15px;
-    line-height: 43px;
+    line-height: 47px;
     border-radius: 50%;
     border: 3px solid $color-terciario;
     transition: all .5s ease-in-out;

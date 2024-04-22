@@ -8,25 +8,18 @@
     }
 
     .conocimientos__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (flex, row, center, center);
         flex-wrap: wrap;
     }
     .caja{
-        width: 250px;
-        height: 250px;
+        @include sizes (250px, 250px);
     }
 
-    .caja1, .caja2, .caja3, .caja4, .caja5{
-        width: 100px;
-        height: 100px;
+    .caja1, .caja2, .caja3, .caja4, .caja5, .caja6{
+        @include sizes (100px, 100px);
+        @include flexbox (flex, row, center, center);
         background-color: $color-primario;
         margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 10px;
 
         img{
@@ -34,4 +27,3 @@
         }
     }
 }
-

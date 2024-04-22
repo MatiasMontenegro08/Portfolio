@@ -9,10 +9,7 @@
 }
 
 form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (flex, column, center, center);
 
     .btn{
         width: 80%;

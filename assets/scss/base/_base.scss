@@ -3,13 +3,13 @@ html {
     width: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
-    background-color: #082B43;
+    background-color: $color-primario;
 }
 
-main{
+main {
     width: 100%;
-    background-image: linear-gradient(to bottom , $color-primario, $color-cuarto);
+    background-image: linear-gradient(to bottom, $color-primario, $color-cuarto);
 }
