@@ -1,0 +1,10 @@
+.card{
+    a{
+        background-color: $color-primario;
+
+        &:hover{
+            background-color: $color-cuarto;
+            border: 1px solid $color-cuarto;
+        }
+    }
+}
